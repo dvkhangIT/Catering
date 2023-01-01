@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Times New Roman", Georgia, Serif;
+  scroll-behavior: smooth;
+}
+.header {
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-left {
+  margin-left: 40px;
+}
+.header-nav-right {
+  margin-right: 40px;
+}
+
+.header-nav-item {
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 16px;
+  display: inline-block;
+  color: #000;
+}
+.header-nav-item:hover {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.image-top {
+  height: 515px;
+  width: 100%;
+  object-fit: cover;
+}
+.content {
+  position: relative;
+}
+.content-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 777px;
+  padding: 12px 24px;
+  margin: 10px 0;
+}
+h1 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 36px;
+  opacity: 0.5;
+  display: none;
+}
+#about-catering {
+  max-width: 1100px;
+  height: 780px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 50px;
+  margin: 64px 0;
+  margin: 0 auto;
+  align-items: center;
+}
+.about-catering-img {
+  width: 550px;
+  height: 650px;
+}
+.about-catering-text {
+  width: 450px;
+  height: 536px;
+}
+h2,
+h3 {
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 54px;
+  margin: 10px 0px;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  line-height: 27px;
+  font-size: 18px;
+}
+hr {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#our-menu {
+  padding-top: 90px;
+  max-width: 1100px;
+  height: 780px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image {
+  width: 550px;
+  height: 650px;
+  object-fit: cover;
+  grid-gap: 0 50px;
+}
+#contact {
+  width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-left {
+  align-items: right;
+}
+h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0;
+}
+span .contact-span-color,
+.contact-span {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  opacity: 0.5;
+}
+h4 {
+  font-family: Playfair Display;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 54px;
+  margin: 40px 0px;
+}
+.contact-span {
+  opacity: 1;
+}
+.contact-span-color {
+  color: #607d8b;
+  display: inline;
+  font-family: Times New Roman;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  opacity: 1;
+}
+p {
+  margin-bottom: 16px;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-info a {
+  text-decoration: none;
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .image-top {
+    padding: 0 10px;
+    height: auto;
+  }
+  .about-catering {
+    grid-template-columns: 100%;
+  }
+
+  #about-catering {
+    height: auto;
+    display: block;
+  }
+  .about-catering-img {
+    width: 100%;
+    object-fit: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-catering-text {
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #our-menu {
+    height: auto;
+    display: block;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    grid-gap: 0 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .our-menu-text {
+    width: auto;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #contact {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .header-nav-right {
+    display: none;
+  }
+  .image-top {
+    padding: 0 10px;
+    height: auto;
+  }
+  .about-catering {
+    grid-template-columns: 100%;
+  }
+
+  #about-catering {
+    height: auto;
+    display: block;
+  }
+  .about-catering-img {
+    width: 100%;
+    object-fit: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-catering-text {
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #our-menu {
+    height: auto;
+    display: block;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    grid-gap: 0 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .our-menu-text {
+    width: auto;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #contact {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* Pc: width >= 1024px */
+@media only screen and (min-width: 64em) {
+}
